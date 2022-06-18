@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Sites{% endblock %}
+
+{% block nav %}
+    <a href="{% url 'home' %}"><li><i class="fa-solid fa-arrow-left"></i> Go back</li></a>
+    <a href="https://app.stormgain.com/crypto-miner/" target="_blank"><li><i class="fa-solid fa-cloud-bolt"></i> StormGain</li></a>
+    <a href="https://larvelfaucet.com/game" target="_blank"><li><i class="fa-solid fa-gopuram"></i> LarvelFaucet</li></a>
+    <a href="{% url 'cryptowin'%}"><li><i class="fa-solid fa-bitcoin-sign"></i> CrpyptoWin</li></a>
+    <a href="{% url 'bitcoin'%}"><li><i class="fa-brands fa-bitcoin"></i> FreeBitcoin</li></a>
+    <a href="{% url 'bits' %}"><li><i class="fa-solid fa-arrow-right-to-city"></i> SimpleBits</li></a>
+{% endblock %}
+
+{% block content %}
+        <iframe src="https://cryptowin.io/faucet" width="80%" height="969px" frameborder="0"></iframe>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Sites{% endblock %}
+
+{% block nav %}
+<a href="{% url 'home' %}"><li><i class="fa-solid fa-arrow-left"></i> Go back</li></a>
+<a href="https://app.stormgain.com/crypto-miner/" target="popup"><li><i class="fa-solid fa-cloud-bolt"></i> StormGain</li></a>
+<a href="https://larvelfaucet.com/game" target="_blank"><li><i class="fa-solid fa-gopuram"></i> LarvelFaucet</li></a>
+<a href="{% url 'cryptowin'%}"><li><i class="fa-solid fa-bitcoin-sign"></i> CrpyptoWin</li></a>
+<a href="{% url 'bitcoin'%}"><li><i class="fa-brands fa-bitcoin"></i> FreeBitcoin</li></a>
+<a href="{% url 'bits' %}"><li><i class="fa-solid fa-arrow-right-to-city"></i> SimpleBits</li></a>
+{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <add name="X-Frame-Options" value="sameorigin"/>
+        <h1>About Me</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est facilis eveniet autem iste, voluptatum aperiam maiores reiciendis rem ab ex?</p>
+        <pjsdiv style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; transition: transform 0.2s linear 0s; text-align: center;"><video preload="none" crossorigin="anonymous" src="blob:https://arven.as.alloeclub.com/cc8c9f76-be43-445b-9d74-b6b867aa8b26" x-webkit-airplay="allow" disableremoteplayback="true" pip="false" controlslist="nodownload" style="position: static; width: 100%; height: 100%; object-fit: contain; transition: filter 0.2s linear 0s; min-height: auto; max-height: none; min-width: auto; max-width: none;"></video></pjsdiv>
+{% endblock %}
